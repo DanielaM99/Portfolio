@@ -22,6 +22,7 @@ body{
 
 .brand{
     margin-top: -7px;
+    position: fixed;
 }
 
 .brand span{
@@ -30,12 +31,15 @@ body{
 
 .info-content span{
     color: purple;
+    
 }
 
 .menu{
-    display: flex;
+    display:flex;
     width: 50%;
     justify-content: space-around;
+    position: fixed;
+    right: 50px;
 }
 
 .menu li{
@@ -71,6 +75,8 @@ h1{
     border: 4px solid #fff;
     height: 400px;
     margin-left: 100px;
+    margin-top: 100px;
+
 }
 
 .about{
@@ -79,12 +85,14 @@ h1{
     width: 100vw;
     align-items: center;
     background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+
 }
 
 .about img{
     width: 400%;
     height: 80%;
     grid-row: 1/5;
+    object-fit: contain
 }
 
 .about__info{
@@ -95,6 +103,7 @@ h1{
 .about__info h2{
     font-size: 2em;
     color: #000;
+    margin-top: 30px;
 }
 
 .divider{
@@ -121,11 +130,12 @@ h1{
 
 .proyect{
     width: 100vw;
-    padding: 5em;
+    padding: 3em;
 }
 
 .proyect h2{
-    font-size: 2em; 
+    font-size: 2em;
+    margin-top: 50px;
 }
 
 .proyects .container{
@@ -183,41 +193,59 @@ h1{
 .proyects__links i{
     font-size: 1.5em;
 }
-
 .contact{
     background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
-}
-
-.contact h2{
-    font-size: 3em;
-    
-    
-}
-
-.container__contac{
-    padding: 3em;
-    margin: 0 auto;
 
 }
-
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    margin-top: 2em;
+h3{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
-.form input{
-    padding: 10px 20px;
-    margin-bottom: 1em;
-    background: none;
+form{
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 55px #0009;
+    margin-top: 50px;
+}
+
+.form_input{
+    padding: 6px 20px;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+
     border: none;
-    border-bottom: 1px solid #000;
-    color: #000;
+    border-left: 2px solid #999;
+    box-shadow: 0 0 15px #0001;
+    background-color: transparent;
 }
 
-.contact form{
-    justify-items: center;
+textarea{
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border-left: 2px solid #999;
+    box-shadow: 0 0 15px #0001;
+    background-color: transparent;
+    resize: vertical;
+    min-height: 100%;
+    max-height: 200%;
+    font-family: sans-serif;
+}
+
+label{
+    font-size: 0.88em;
+    line-height: 2;
+    
+
 }
 
 
