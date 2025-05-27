@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.p{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand{
+    margin-top: -7px;
+}
+
+.brand span{
+    color: purple;
+}
+
+.info-content span{
+    color: purple;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color:  #000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    background-color: #cb7acd;
+    transition: ease-in .5s;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.main img{
+
+    border: 4px solid #fff;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+}
+
+.about img{
+    width: 400%;
+    height: 80%;
+    grid-row: 1/5;
+}
+
+.about__info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about__info h2{
+    font-size: 2em;
+    color: #000;
+}
+
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: purple;
+    margin-top: 5px;
+    margin-bottom: 3em;
+}
+
+.about p{
+    margin-bottom: 3em;
+}
+
+.app{
+    font-size: 8em;
+}
+
+.proyects{
+    width: 100vw;
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+    color: #000;
+}
+
+.proyect{
+    width: 100vw;
+    padding: 5em;
+}
+
+.proyect h2{
+    font-size: 2em; 
+}
+
+.proyects .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    color: #fff;
+    height: 350px;
+    background-color: #000000d5;
+    margin: 1em;
+}
+
+.car__img{
+    width: 100%;
+    height: 200px;
+    background-image: url(./img/inventory\ manager.png);
+    background-size: cover;
+}
+
+.car__img1{
+    width: 100%;
+    height: 200px;
+    background-image: url(./img/calificaciones.png);
+    background-size: cover;
+}
+
+.car__img2{
+    width: 100%;
+    height: 200px;
+    background-image: url(./img/PruebaRiwi.png);
+    background-size: cover;
+}
+
+.card__title{
+    padding: 20px;
+    color: #fff;
+}
+
+.proyects__links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.proyects__links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.proyects__links i{
+    font-size: 1.5em;
+}
+
+.contact{
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+}
+
+.contact h2{
+    font-size: 3em;
+    
+    
+}
+
+.container__contac{
+    padding: 3em;
+    margin: 0 auto;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.contact form{
+    justify-items: center;
+}
+
+
+.form textarea{
+    height: 150px;
+    background: none;
+    color: #000;
+    padding: 2em;
+    border: 1px solid #000;
+}
+
+.button{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #3e9bc6;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #3e9bc6;
+}
+
+.button:hover{
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
+}
+
+.footer__content h2{
+    font-size: 3em;
+}
+
+.sotial__network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.sotial__network i{
+    font-size: 2em;
+}
