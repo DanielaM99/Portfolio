@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300'); /* Importa fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300'); /* Import Roboto font from Google Fonts */
 
-/* Hace que el padding y el border no aumenten el tamaño del elemento */
+/*Makes padding and border not increase the size of the element*/
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +11,10 @@ body{
     font-family: sans-serif;
 }
 
-.p{
+.nav{
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%); /* Fondo degradado */
+    background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%); /*gradient background*/
 }
 
 .navbar{
@@ -26,7 +26,7 @@ body{
 
 .brand{
     margin-top: -7px;
-    position: fixed; /* Permanece fija al hacer scroll */
+    position: fixed; /*It stays fixed when scrolling*/
 }
 
 .brand span{
@@ -37,7 +37,7 @@ body{
     color: purple;
 }
 
-/* Menu de navegación */
+/*It stays fixed when scrolling*/
 .menu{
     display: flex;
     width: 50%;
@@ -47,7 +47,7 @@ body{
 }
 
 .menu li{
-    list-style: none; /* Quita viñetas */
+    list-style: none; /*Remove bullets*/
 }
 
 .menu a{
@@ -56,7 +56,6 @@ body{
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 15px;
-    text-transform: uppercase;
     font-size: 1em;
     transition: 0.5s;
     position: relative;
@@ -75,7 +74,7 @@ body{
 }
 
 
-/* Seciión principal */
+/*Main section*/
 .main{
     margin: 0 auto;
     width: 80vw;
@@ -84,10 +83,9 @@ body{
     align-items: center;
 }
 
-/* Encabezado */
+/*Header*/
 h1{
-    overflow-y: hidden;
-    display:inline-block;
+    margin-right: 80px;
     overflow:hidden;
     white-space:nowrap;
     font-size: 3.3em;
@@ -104,7 +102,7 @@ h1:last-of-type span {
     animation: slidein 7s infinite;
 }
 
-/* Animacion */
+/*Animation*/
 @keyframes showup {
     0% {opacity:0;}
     20% {opacity:1;}
@@ -127,7 +125,7 @@ h1:last-of-type span {
     100% {opacity:0;width:355px;}
 }
 
-/* Sección About me */
+/*About me section*/
 .about{
     display: grid;
     grid-template-columns: repeat(10,1fr);
@@ -140,7 +138,17 @@ h1:last-of-type span {
     width: 300%;
     height: 80%;
     grid-row: 1/5;
-    object-fit: contain;
+    margin-left: 50px;
+    border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #b059b5;
+}
+
+.about img:hover {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    filter: grayscale(80%);
 }
 
 .about-info{
@@ -168,7 +176,7 @@ h1:last-of-type span {
 
 .divider{
     height: 4px;
-    width: 60px;
+    width: 80px;
     background-color: purple;
     margin-top: 5px;
     margin-bottom: 3em;
@@ -182,11 +190,24 @@ h1:last-of-type span {
     font-size: 8em;
 }
 
+/*projects section */
 .h2-proyects{
+    display: flex;
+    margin-left: 80px;
     animation: 2s waves infinite;
     display: inline-block;
 }
 
+.divider1{
+    height: 4px;
+    width: 80px;
+    background-color: purple;
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 3em;
+}
+
+/*Animation*/
 @keyframes waves{
     0%, 40%, 100%{
         transform: translateY(0px);
@@ -196,7 +217,6 @@ h1:last-of-type span {
     }
 }
 
-/* sección de proyectos */
 .proyects{
     width: 100%;
     background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
@@ -223,10 +243,12 @@ h1:last-of-type span {
 .card{
     width: 300px;
     color: #fff;
-    height: 350px;
+    height: 400px;
     background-color: #000000d5;
-    margin: 1em;
+    margin: 1.5em;
 }
+
+
 
 .car-img{
     width: 100%;
@@ -250,7 +272,7 @@ h1:last-of-type span {
 }
 
 .card-title{
-    padding: 20px;
+    padding: 30px;
     color: #fff;
 }
 
@@ -264,8 +286,14 @@ h1:last-of-type span {
     text-decoration: none;
 }
 
+.proyects-links a:visited{
+    color: purple;
+    text-decoration: none;
+}
+
 .proyects-links i{
-    font-size: 1.5em;
+    font-size: 2em;
+    overflow-y: hidden;
 }
 
 #contact{
@@ -278,6 +306,7 @@ h1:last-of-type span {
     animation-delay: calc(0.1s * var(--n));
 }
 
+/*Animation*/
 @keyframes waves{
     0%, 40%, 100%{
         transform: translateY(0px);
@@ -287,7 +316,7 @@ h1:last-of-type span {
     }
 }
 
-/* Sección de contacto */
+/*Contact section*/
 .contact{
     background: linear-gradient(to right, #fff 0%,#fff 10%, transparent, #fff 30%, #de3ae3 100%);
     display: flex;
@@ -309,7 +338,7 @@ h1:last-of-type span {
     width: 100%;
 }
 
-/* Formilario */
+/*Form*/
 .form{
     display: flex;
     flex-direction: column;
@@ -318,7 +347,7 @@ h1:last-of-type span {
 }
 
 .form input{
-    padding: 10px 10px;
+    padding: 10px 50px;
     margin-bottom: 1em;
     background: none;
     border: none;
@@ -340,22 +369,33 @@ h1:last-of-type span {
 }
 
 .button{
-    padding: 10px 20px;
-    margin: 1em;
+    width:80%;
+    height:40px;
+    background: linear-gradient(to left top, #d44c89e2 50%, #b33771b1 50%);
     border: none;
-    text-transform: uppercase;
-    background-color: #3e9bc6;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin: 1em;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px #3e9bc6;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
 }
 
-.button:hover{
-    background-color: #fff;
-    box-shadow: none;
+button:hover{
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px #0008;
 }
 
-/* Footer */
+
+/*Footer*/
 .footer{
     display: flex;
     flex-direction: column;
@@ -379,4 +419,5 @@ h1:last-of-type span {
 
 .sotial-network i{
     font-size: 2em;
+    color: #000;
 }
